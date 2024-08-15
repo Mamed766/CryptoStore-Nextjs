@@ -26,7 +26,11 @@ const Categories: React.FC = () => {
   return (
     <div className=" flex flex-col mt-10">
       <div className="text-white text-[25px]">
-        All Categories. <span className="text-gray-400"> What`s you like </span>
+        All Categories.{" "}
+        <span className="text-gray-400 font-customFont italic">
+          {" "}
+          What`s you like{" "}
+        </span>
       </div>
       <div>
         <div className="flex flex-wrap justify-between  ">

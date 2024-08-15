@@ -14,6 +14,10 @@ const config: Config = {
           "100%": { width: "100%" },
         },
       },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        customFont: ["Lora", "sans-serif"],
+      },
       animation: {
         "expand-line": "expand 2s ease-in-out forwards",
       },

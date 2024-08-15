@@ -14,9 +14,11 @@ const Spotlight = () => {
       <div className="max-w-[1200px] mx-auto">
         <div>
           <div className="flex justify-between pt-3">
-            <h1 className="text-white text-[25px]">
+            <h1 className="text-white text-[25px] ">
               Spotlight.{" "}
-              <span className="text-gray-400">Collection you love</span>
+              <span className="text-gray-400  font-customFont italic">
+                Collection you love
+              </span>
             </h1>
             <button className="text-white border border-gray-500 py-1 px-5 rounded-lg hover:bg-[#17ef97] duration-300">
               Browse All
