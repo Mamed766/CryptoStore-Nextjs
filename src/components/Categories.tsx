@@ -7,10 +7,10 @@ import useSWR from "swr";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { BiHeart } from "react-icons/bi";
-import { CardData } from "@/types/type";
+import { CardData, CategoriesType } from "@/types/type";
 import { fetcher } from "@/services/fetcher";
 
-const Categories: React.FC = () => {
+const Categories: React.FC<CategoriesType> = ({ title, desc }) => {
   const { data, error, isLoading } = useSWR<CardData[]>(
     "http://localhost:3001/categories",
     fetcher
@@ -26,11 +26,8 @@ const Categories: React.FC = () => {
   return (
     <div className=" flex flex-col mt-10">
       <div className="text-white text-[25px]">
-        All Categories.{" "}
-        <span className="text-gray-400 font-customFont italic">
-          {" "}
-          What`s you like{" "}
-        </span>
+        <span className="font-bold"> {title}</span>
+        <span className="text-gray-400 font-customFont italic">{desc} </span>
       </div>
       <div>
         <div className="flex flex-wrap justify-between  ">
